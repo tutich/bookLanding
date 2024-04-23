@@ -5,14 +5,14 @@ import twitter from '../../images/icon-twitter.svg'
 
 const Footer = () => {
   return (
-    <div>
-      <section className="bg-[#242946] text-white flex flex-col justify-between mx-auto items-center px-6  py-6">
-        <div>
-          <img className='p-6' src={bookmark} alt="" />
+    <div className='bg-[#242946]'>
+      <section className=" text-white flex flex-col justify-center mx-auto items-center  px-6  py-6 gap-6 lg:flex-row lg:w-[80%] ">
+        <div  className=' gap-4 justify-center mx-auto items-center lg:flex-row lg:w-[80%] '>
+          <img className='my-4' src={bookmark} alt="" />
 
         
         <div className=''>
-          <ul className=''>
+          <ul className='flex flex-col justify-center mx-auto items-center gap-4 lg:flex-row lg:w-[80%] lg:justify-center lg:-mt-10'>
             <li>Features</li>
             <li>Pricing</li>
             <li>Contact</li>
@@ -20,8 +20,8 @@ const Footer = () => {
         </div>
         </div>
 
-        <div className='gap-5'>
-          <img className='' src={facebook} alt="" />
+        <div className='flex items-center justify-center lg:mt-2'>
+          <img className='px-6' src={facebook} alt="" />
           <img src={twitter} alt=""/>
         </div>
       </section>

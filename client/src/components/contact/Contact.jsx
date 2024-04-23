@@ -18,14 +18,15 @@ const Contact = () => {
   };
 
   return (
-    <div>
-      <section>
-        <p><span>35,000+</span>ALREADY JOINED</p>
-        <h3>Stay up-to-date with what we’re doing</h3>
-        <div>
-          <div className='relative'>
+    <div className='bg-[#5266df]'>
+      <section className='py-12 px-6 text-white'>
+        <p className='tracking-widest text-gray-300'><span>35,000+</span>    ALREADY JOINED</p>
+        <h3 className='font-bold text-2xl py-4'>Stay up-to-date with what <br /> we’re doing</h3>
+        <div className='lg:flex items-center justify-center mx-auto lg:gap-4'>
+          <div className='relative py-4'>
             <input type="text" placeholder='Enter your email address' value={email}
                onChange={handleChange}
+               className='p-2 border rounded-md text-black'
               />
            {!isValidEmail && (
             <img
@@ -38,7 +39,7 @@ const Contact = () => {
           {!isValidEmail && (
           <p className="text-red-500">Whoops, make sure it's an email</p>
           )}
-          <button type='submit'>Contact Us</button>
+          <button type='submit' className='bg-[#fb5859] h-[42px] w-[220px]  rounded-md'>Contact Us</button>
         </div>
       </section>
     </div>
