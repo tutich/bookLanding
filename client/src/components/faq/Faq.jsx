@@ -34,7 +34,7 @@ const Faq = () => {
       <section className='mx-auto lg:w-[40%]'>
         <div>
         <hr />
-          <div className="flex items-center">
+          <div className="flex items-center  gap-10">
             <h3>What is Bookmark?</h3>
             <button onClick={toggleAccordion}><img src={arrow} alt="" className={isOpen ? 'transform rotate-180' : ''}/></button>
           </div>
@@ -67,7 +67,7 @@ const Faq = () => {
 
         <div>
          <hr />
-          <div className="flex items-center">
+          <div className="flex items-center gap-10">
             <h3>Is there a mobile app?</h3>
             <button onClick={handleAccordion}><img src={arrow} alt="" className={isMobile ? 'transform rotate-180' : ''}/></button>
           </div>
@@ -81,7 +81,7 @@ const Faq = () => {
 
         <div>
         <hr />
-          <div className="flex items-center">
+          <div className="flex items-center gap-10">
             <h3>What about other Chromium browsers?</h3>
             <button onClick={toggleBrowser}><img src={arrow} alt="" className={isBrowser ? 'transform rotate-180' : ''}/></button>
           </div>
