@@ -26,13 +26,14 @@ const Faq = () => {
 
   return (
     <div>
-      <section>
+      <section className='mx-auto w-[50%]'>
         <h2>Frequently Asked Questions </h2>
-        <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+        <p>Here are some of our FAQs. If you have any other questions <br /> you’d like answered please feel free to email us.</p>
       </section>
 
-      <section>
+      <section className='mx-auto lg:w-[40%]'>
         <div>
+        <hr />
           <div className="flex items-center">
             <h3>What is Bookmark?</h3>
             <button onClick={toggleAccordion}><img src={arrow} alt="" className={isOpen ? 'transform rotate-180' : ''}/></button>
@@ -44,22 +45,28 @@ const Faq = () => {
           )}
         </div>
 
-        <div>
-          <div className="flex items-center">
+        <div className=''>
+         <hr />
+          <div className="flex items-center gap-10">
+            
             <h3>How can I request a new browser?</h3>
             <button onClick={toggleRequest}><img src={arrow} alt="" className={isRequest ? 'transform rotate-180' : ''}/></button>
           </div>
-          {isRequest&& (
-            <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non 
-              ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. 
-              Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros 
-              aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse 
-              imperdiet.
-            </p>
-          )}
+          <div>
+            {isRequest&& (
+              <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non
+                ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies.
+                Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros
+                aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
+                imperdiet.
+              </p>
+            )}
+          </div>
         </div>
+        
 
         <div>
+         <hr />
           <div className="flex items-center">
             <h3>Is there a mobile app?</h3>
             <button onClick={handleAccordion}><img src={arrow} alt="" className={isMobile ? 'transform rotate-180' : ''}/></button>
@@ -73,6 +80,7 @@ const Faq = () => {
         </div>
 
         <div>
+        <hr />
           <div className="flex items-center">
             <h3>What about other Chromium browsers?</h3>
             <button onClick={toggleBrowser}><img src={arrow} alt="" className={isBrowser ? 'transform rotate-180' : ''}/></button>
@@ -83,6 +91,7 @@ const Faq = () => {
             </p>
           )}
         </div>
+        <hr />
       </section>
     </div>
   )
