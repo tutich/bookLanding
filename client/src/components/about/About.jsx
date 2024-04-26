@@ -58,8 +58,8 @@ const About = () => {
         <article>
         {selectedId && (
             <>
-              <h3>{Data[selectedId - 1].title}</h3>
               <img src={Data[selectedId - 1].image} alt={Data[selectedId - 1].title} />
+              <h3>{Data[selectedId - 1].title}</h3>
               <p>{Data[selectedId - 1].desc}</p>
             </>
           )}
