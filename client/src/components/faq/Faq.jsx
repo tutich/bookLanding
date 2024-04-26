@@ -26,9 +26,9 @@ const Faq = () => {
 
   return (
     <div>
-      <section className='mx-auto py-8'>
+      <section >
         <h2 className='text-xl font-bold text-[#242946] p-4'>Frequently Asked Questions </h2>
-        <p className='text-gray-500'>Here are some of our FAQs. If you have any other questions <br /> you’d like answered please feel free to email us.</p>
+        <p className='text-gray-500 py-7'>Here are some of our FAQs. If you have any other questions <br /> you’d like answered please feel free to email us.</p>
       </section>
 
       <section className='mx-auto  w-[90%] lg:w-[40%]'>
