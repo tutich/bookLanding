@@ -6,7 +6,7 @@ import dots from '../../images/bg-dots.svg'
 
 const Links = () => {
   return (
-    <div>
+    <div  >
       <section>
         <h3>Download the extension</h3>
         <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a 
@@ -14,7 +14,7 @@ const Links = () => {
         </p>
       </section>
 
-      <section>
+      <section className=' flex items-center justify-between mx-auto  lg:w-[80%]'>
         <div>
           <img src={chrome} alt="" />
           <h4>Add to Chrome</h4>
@@ -23,12 +23,12 @@ const Links = () => {
           <button>Add & Install Extension</button>
         </div>
 
-        <div>
-          <img src={firefox} alt="" />
+        <div className='grid grid-col-1 items-center justify-center w-[200px] text-center'>
+          <img src={firefox} alt="" className="mx-auto mb-2" />
           <h4>Add to Firefox</h4>
           <p>Minimum version 55</p>
           <img src={dots} alt="" />
-          <button>Add & Install Extension</button>
+          <button className='bg-blue-500 hover:bg-blue-700 text-white py-1  rounded '>Add & Install Extension</button>
         </div>
 
         <div>
@@ -38,9 +38,6 @@ const Links = () => {
           <img src={dots} alt="" />
           <button>Add & Install Extension</button>
         </div>
-      </section>
-      <section>
-        <button>More Info</button>
       </section>
     </div>
   )
