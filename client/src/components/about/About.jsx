@@ -49,9 +49,9 @@ const About = () => {
       </section>
 
       <section className='flex flex-col justify-between  mx-auto lg:w-[50%] lg:flex-row py-2'>
-        <button onClick={() => handleClick(1)}>Simple Bookmarking</button>
-        <button onClick={() => handleClick(2)}>Speedy Searching</button>
-        <button onClick={() => handleClick(3)}>Easy Sharing</button>
+        <button onClick={() => handleClick(1)} className={`focus:outline-none ${selectedId === 1 ? 'border-b-4 border-red-500' : ''}`}>Simple Bookmarking</button>
+        <button onClick={() => handleClick(2)} className={`focus:outline-none ${selectedId === 2 ? 'border-b-4 border-red-500' : ''}`}>Speedy Searching</button>
+        <button onClick={() => handleClick(3)} className={`focus:outline-none ${selectedId === 3 ? 'border-b-4 border-red-500' : ''}`}>Easy Sharing</button>
        
       </section>
       <div className='mx-auto lg:w-[50%] mb-3'><hr /></div>
