@@ -38,30 +38,35 @@ const About = () => {
   };
 
   return (
-    <div>
-      <section>
+    <div className='mb-6'>
+      <section className='mx-auto py-8 '>
         <article className=''>
-          <h2>Features</h2>
-          <p>Our aim is to make it quick and easy for you to access your favourite websites.
-          Your bookmarks sync between your devices so you can access them on the go.
+          <h2 className='text-xl font-bold text-[#242946] p-4'>Features</h2>
+          <p className='text-gray-500'>Our aim is to make it quick and easy for you to access your <br /> favourite websites.
+          Your bookmarks sync between your devices <br /> so you can access them on the go.
           </p>
         </article>
       </section>
 
-      <section>
+      <section className='flex flex-col justify-between  mx-auto lg:w-[50%] lg:flex-row py-2'>
         <button onClick={() => handleClick(1)}>Simple Bookmarking</button>
         <button onClick={() => handleClick(2)}>Speedy Searching</button>
         <button onClick={() => handleClick(3)}>Easy Sharing</button>
+       
       </section>
+      <div className='mx-auto lg:w-[50%] mb-3'><hr /></div>
 
       <section>
         <article>
         {selectedId && (
-            <>
+            <div className='flex flex-col items-center justify-center gap-16 mx-auto lg:flex-row lg:w-[80%]'>
               <img src={Data[selectedId - 1].image} alt={Data[selectedId - 1].title} />
-              <h3>{Data[selectedId - 1].title}</h3>
-              <p>{Data[selectedId - 1].desc}</p>
-            </>
+              <div className='lg:text-left w-[80%]'>
+                <h3 className='text-xl font-bold text-[#242946] py-4'>{Data[selectedId - 1].title}</h3>
+                <p className='text-gray-500 py-4'>{Data[selectedId - 1].desc}</p>
+                <button className='hidden lg:block bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded '>More Info</button>
+              </div>
+            </div>
           )}
         </article>
       </section>

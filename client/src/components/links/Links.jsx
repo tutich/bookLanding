@@ -15,7 +15,7 @@ const Links = () => {
       </section>
 
       <section className='flex flex-col lg:flex-row items-center justify-between mx-auto  lg:w-[70%]'>
-        <div className='grid grid-col-1  w-[90%] items-center mb-12 lg:mb-36 justify-center  w-[250px] text-center bg-white shadow-md p-3 rounded-lg'>
+        <div className='grid grid-col-1   items-center mb-12 lg:mb-36 justify-center  w-[250px] text-center bg-white shadow-md p-3 rounded-lg'>
           <img src={chrome} alt="" className="mx-auto mb-2" />
           <h4 className=' font-bold text-[#242946] '>Add to Chrome</h4>
           <p  className='text-gray-500'>Minimum version 62</p>
